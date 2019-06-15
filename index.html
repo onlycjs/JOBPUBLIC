@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <script>
+        window.onload = function(){
+            let inList = document.querySelectorAll(".wrap-input > input");
+            inList.forEach(x => {
+                x.addEventListener("change", (e) => {
+                    if (e.target.value.length > 0 ) {
+                        e.target.classList.add("has-val");
+                    }else {
+                        e.target.classList.remove("has-val");
+                    }
+                });
+            })
+        }
+    </script>
+</head>
+<body>
+    <div class="row d-flex justify-content-center" id="page">
+        <div class="col-12 d-flex justify-content-center align-items-center">
+            <div class="inner-form">
+                <form action="/">
+                    <span class="login-form-title pb-3">Welcome</span>
+                    <span class="login-form-title pb-3">아이콘</span>
+
+                    <div class="wrap-input">
+                        <input type="text">
+                        <span class="focus-line" data-placeholder="아이디"></span>
+                    </div>
+                    <div class="wrap-input">
+                        <input type="password">
+                        <span class="focus-line" data-placeholder="비밀번호"></span>
+                    </div>
+
+                    <div class="row my-5">
+                        <div class="col-12 text-center">
+                            <button type="submit" class="login-btn">로그인</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

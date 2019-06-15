@@ -1,0 +1,118 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: #eee !important;
+}
+
+#page {
+    width: 100%;
+    height: 100%;
+}
+
+.inner-form {
+    width: 400px;
+    background-color: #fff;
+    border-radius: 0.3rem;
+    padding: 77px 55px 33px 55px;
+    box-shadow: 0 5px 10px 0px rgba(0, 0, 0, 0.1)
+}
+
+.login-form-title {
+    display: block;
+    font-size: 30px;
+    color: #333;
+    line-height: 1.2;
+    text-align: center;
+}
+
+.wrap-input {
+    width: 100%;
+    position: relative;
+    border-bottom: 2px solid #adadad;
+    margin-bottom: 35px;
+}
+
+.wrap-input > input {
+    font-size: 15px;
+    color: #555;
+    line-height: 1.2;
+    width: 100%;
+    height: 45px;
+    background-color: transparent;
+    border: none;
+    padding: 0 5px;
+    outline: none;
+}
+
+.wrap-input > input.has-val + .focus-line::before {
+    width: 100%;
+}
+
+.wrap-input > input:focus + .focus-line::before {
+    width: 100%;
+}
+
+.wrap-input > input:focus + .focus-line::after {
+    top: -15px;
+}
+
+.wrap-input > input.has-val + .focus-line::after {
+   top: -15px;
+}
+
+.focus-line {
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    display: block;
+    position: absolute;
+    pointer-events: none;
+}
+
+.focus-line::before {
+    content: "";
+    display: block;
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    transition: all 0.5s;
+    background: -webkit-linear-gradient(left, #21d4fd, #b721ff);
+}
+
+.focus-line::after {
+    content: attr(data-placeholder);
+    font-size: 15px;
+    color: #999;
+    line-height: 1.2;
+    display: block;
+    width: 100%;
+    position: absolute;
+    top: 12px;
+    left: 0;
+    padding-left: 5px;
+    transition: all 0.4;
+}
+
+.login-btn {
+    font-size: 15px;
+    color: #fff;
+    display: flex !important;
+    justify-content: center;
+    align-items: center;
+    padding: 0 20px;
+    width: 100%;
+    outline: none;
+    border: none;
+    background-color: #8bd1ff;
+    height: 50px;
+}
