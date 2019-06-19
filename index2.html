@@ -8,7 +8,7 @@
     <title>Document</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" href="/fontawesome-free-5.9.0/css/all.css">
+    <link rel="stylesheet" href="fontawesome-free-5.9.0-web/css/all.css">
     <link rel="stylesheet" href="style2.css">
 </head>
 
@@ -49,7 +49,58 @@
 
     <section id="best">
         <div class="container position-relative d-flex">
-            <div class="search-box"></div>
+            <div class="search-box">
+                <form action="#">
+                    <div class="form-group">
+                        <label for="#">Destination</label>
+                        <div class="form-field">
+                            <i class="fas fa-search"></i>
+                            <input class="input-type" type="text" placeholder="Search place">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="#">Check-in date</label>
+                        <div class="form-field">
+                            <i class="far fa-calendar"></i>
+                            <input class="input-type" type="text" placeholder="Check In Date">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="#">Check-out date</label>
+                        <div class="form-field">
+                            <i class="far fa-calendar"></i>
+                            <input class="input-type" type="text" placeholder="Check Out Date">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="#">Price Limit</label>
+                        <div class="form-field">
+                            <i class="fas fa-chevron-down"></i>
+                            <select>
+                                <option value>$5,000</option>
+                                <option value>$10,000</option>
+                                <option value>$50,000</option>
+                                <option value>$100,000</option>
+                                <option value>$200,000</option>
+                                <option value>$300,000</option>
+                                <option value>$400,000</option>
+                                <option value>$500,000</option>
+                                <option value>$600,000</option>
+                                <option value>$700,000</option>
+                                <option value>$800,000</option>
+                                <option value>$900,000</option>
+                                <option value>$1000,000</option>
+                                <option value>$2000,000</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="form-field">
+                            <input type="submit" value="Search" class="form-control btn btn-warning" id="searchbtn">
+                        </div>
+                    </div>
+                </form>
+            </div>
             <h1>Best Place to Travel</h1>
             <p>
                 Far far away, behind the word mountains,
@@ -58,14 +109,14 @@
             <div class="place-list">
                 <div class="place-item">
                     <div class="img-div">
-                        <img src="/images/destination-1.jpg" alt="1">
+                        <img src="images/destination-1.jpg" alt="1">
                     </div>
                     <div class="text-div">
                         <div class="price">$400</div>
                         <div class="day">15 Days Tour</div>
                         <div class="title">Gurtnellen, Swertzerland</div>
                         <div class="point">
-                            <div class="star-list">
+                            <div class="star">
                                 <span class="star"><i class="fas fa-star"></i></span>
                                 <span class="star"><i class="fas fa-star"></i></span>
                                 <span class="star"><i class="fas fa-star"></i></span>
@@ -78,14 +129,14 @@
                 </div>
                 <div class="place-item">
                     <div class="img-div">
-                        <img src="/images/destination-2.jpg" alt="1">
+                        <img src="images/destination-2.jpg" alt="1">
                     </div>
                     <div class="text-div">
                         <div class="price">$400</div>
                         <div class="day">15 Days Tour</div>
                         <div class="title">Gurtnellen, Swertzerland</div>
                         <div class="point">
-                            <div class="star-list">
+                            <div class="star">
                                 <span class="star"><i class="fas fa-star"></i></span>
                                 <span class="star"><i class="fas fa-star"></i></span>
                                 <span class="star"><i class="fas fa-star"></i></span>
@@ -98,14 +149,14 @@
                 </div>
                 <div class="place-item">
                     <div class="img-div">
-                        <img src="/images/destination-3.jpg" alt="1">
+                        <img src="images/destination-3.jpg" alt="1">
                     </div>
                     <div class="text-div">
                         <div class="price">$400</div>
                         <div class="day">15 Days Tour</div>
                         <div class="title">Gurtnellen, Swertzerland</div>
                         <div class="point">
-                            <div class="star-list">
+                            <div class="star">
                                 <span class="star"><i class="fas fa-star"></i></span>
                                 <span class="star"><i class="fas fa-star"></i></span>
                                 <span class="star"><i class="fas fa-star"></i></span>
@@ -118,14 +169,14 @@
                 </div>
                 <div class="place-item">
                     <div class="img-div">
-                        <img src="/images/destination-4.jpg" alt="1">
+                        <img src="images/destination-4.jpg" alt="1">
                     </div>
                     <div class="text-div">
                         <div class="price">$400</div>
                         <div class="day">15 Days Tour</div>
                         <div class="title">Gurtnellen, Swertzerland</div>
                         <div class="point">
-                            <div class="star-list">
+                            <div class="star">
                                 <span class="star"><i class="fas fa-star"></i></span>
                                 <span class="star"><i class="fas fa-star"></i></span>
                                 <span class="star"><i class="fas fa-star"></i></span>
@@ -140,6 +191,306 @@
         </div>
 
     </section>
+    <section id="service">
+        <div class="container position-relative d-flex">
+            <div class="service-item">
+                <div class="icon-div">
+                    <img src="images/yatch.png" alt="yatch">
+                </div>
+                <div class="text-div">
+                    <div class="title">Activities</div>
+                    <div class="txt"> 203 Fake St. Mountain View, San Francisco, California, USA</div>
+                </div>
+            </div>
+            <div class="service-item">
+                <div class="icon-div">
+                    <img src="images/around.png" alt="around">
+                </div>
+                <div class="text-div">
+                    <div class="title">Travel Arrangements</div>
+                    <div class="txt"> A small river named Duden flows by their place and supplies.</div>
+                </div>
+            </div>
+            <div class="service-item">
+                <div class="icon-div">
+                    <img src="images/compass.png" alt="compass">
+                </div>
+                <div class="text-div">
+                    <div class="title">Private Guide</div>
+                    <div class="txt">A small river named Duden flows by their place and supplies.</div>
+                </div>
+            </div>
+            <div class="service-item">
+                <div class="icon-div">
+                    <img src="images/map-of-roads.png" alt="map-of-roads">
+                </div>
+                <div class="text-div">
+                    <div class="title">Location Manager</div>
+                    <div class="txt">A small river named Duden flows by their place and supplies.</div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="about">
+        <div class="container position-relative d-flex">
+            <div class="about-img" style="background-image: url(images/about.jpg)"></div>
+            <div class="about-content">
+                <div class="about-title">
+                    <h2 class="mb-4">About Traveland</h2>
+                    <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia</p>
+                </div>
+                <div class="about-box">
+                    <div class="text">
+                        <strong class="number">30</strong>
+                        <span>Amazing Deals</span>
+                    </div>
+                </div>
+                <div class="about-box">
+                    <div class="text">
+                        <strong class="number">200</strong>
+                        <span>Sold Tours</span>
+                    </div>
+                </div>
+                <div class="about-box">
+                    <div class="text">
+                        <strong class="number">2,500</strong>
+                        <span>New Tours</span>
+                    </div>
+                </div>
+                <div class="about-box">
+                    <div class="text">
+                        <strong class="number">40</strong>
+                        <span>Happy Customers</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="hotel">
+        <div class="container position-relative d-flex">
+            <h1>Hotel & Restaurant</h1>
+            <p>
+                Far far away, behind the word mountains, far from the countries Vokalia and Consonantia
+            </p>
+            <div class="h-place-list">
+                <div class="h-place-item">
+                    <div class="img-div">
+                        <img src="images/hotel-resto-3.jpg" alt="1">
+                    </div>
+                    <div class="text-div">
+                        <div class="price">$600</div>
+                        <div class="day">300 PER PERSON</div>
+                        <div class="title">New Orleans Hotel</div>
+                        <div class="point">
+                            <div class="star">
+                                <span class="star"><i class="fas fa-star"></i></span>
+                                <span class="star"><i class="fas fa-star"></i></span>
+                                <span class="star"><i class="fas fa-star"></i></span>
+                                <span class="star"><i class="fas fa-star"></i></span>
+                                <span class="star"><i class="fas fa-star"></i></span>
+                            </div>
+                            <div class="number">(120)</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="h-place-item">
+                    <div class="img-div">
+                        <img src="images/hotel-resto-2.jpg" alt="1">
+                    </div>
+                    <div class="text-div">
+                        <div class="price">$600</div>
+                        <div class="day">300 PER PERSON</div>
+                        <div class="title">New Orleans Hotel</div>
+                        <div class="point">
+                            <div class="star">
+                                <span class="star"><i class="fas fa-star"></i></span>
+                                <span class="star"><i class="fas fa-star"></i></span>
+                                <span class="star"><i class="fas fa-star"></i></span>
+                                <span class="star"><i class="fas fa-star"></i></span>
+                                <span class="star"><i class="fas fa-star"></i></span>
+                            </div>
+                            <div class="number">(120)</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="h-place-item">
+                    <div class="img-div">
+                        <img src="images/hotel-resto-3.jpg" alt="1">
+                    </div>
+                    <div class="text-div">
+                        <div class="price">$600</div>
+                        <div class="day">300 PER PERSON</div>
+                        <div class="title">New Orleans Restaurant</div>
+                        <div class="point">
+                            <div class="star">
+                                <span class="star"><i class="fas fa-star"></i></span>
+                                <span class="star"><i class="fas fa-star"></i></span>
+                                <span class="star"><i class="fas fa-star"></i></span>
+                                <span class="star"><i class="fas fa-star"></i></span>
+                                <span class="star"><i class="fas fa-star"></i></span>
+                            </div>
+                            <div class="number">(120)</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="read">
+        <div class="container position-relative d-flex">
+            <div class="r-text">
+                <div class="r-title">
+                    <h2>Things to Know Before</h2>
+                    <h2>Traveling to other</h2>
+                    <h2>Places</h2>
+                    <p class="my-4">Far far away, behind the word mountains, far from the <br>
+                    countries Vokalia and Consonantia</p>
+                </div>
+                <div class="r-number">
+                    <p><strong>1.</strong> A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
+                    <p><strong>2.</strong> A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth.</p>
+                    <p><strong>3.</strong> It is a paradisematic country, in which roasted parts of sentences fly into your mouth.</p>
+                    <input type="submit" value="Read more" class="form-control btn btn-warning" id="readbtn">
+                </div>
+            </div>
+            <div class="r-image">
+                <img src="images/about-1.jpg" alt="readimg" width="540" height="714">
+            </div>
+        </div>
+    </section>
+    <section class="container-fluid" id="happy">
+        <div class="overay"></div>
+            <div class="container text-container">
+                <div class="row d-flex text-row">
+                    <div class="col h-text">
+                        <h2>Happy Traveler Says</h2>
+                    </div>
+                    <div class="col h-image">
+                        <div class="overay"></div>
+                        <img src="images/traveler-5.jpg" alt="happyimg" width="1110" height="600">
+                        <div class="txt">
+                            Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. <br>
+                            <h2>Roger Scott</h2>
+                            <p>INTERFACE DESIGNER</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </section>
+    <section id="recent">
+        <div class="s-title">
+            <h1>Recent Stories</h1>
+        </div>
+        <div class="s-contents">
+            <div class="s-story">
+                <div class="s-image">
+                    <img src="images/image_1.jpg" alt="s1" width="350" height="270">
+                    <div class="txt">
+                            <p class="num">12</p>
+                            <p class="year">2019</p>
+                            <p class="month">February</p>
+                        </div>
+                    </div>
+                <a href="#">Why Lead Generation is Key for Business Growth</a>
+            </div>
+            <div class="s-story">
+                <div class="s-image">
+                    <img src="images/image_2.jpg" alt="s1" width="350" height="270">
+                    <div class="txt">
+                            <p class="num">12</p>
+                            <p class="year">2019</p>
+                            <p class="month">February</p>
+                        </div>
+                    </div>
+                <a href="#">Why Lead Generation is Key for Business Growth</a>
+            </div>
+            <div class="s-story">
+                <div class="s-image">
+                    <img src="images/image_3.jpg" alt="s1" width="350" height="270">
+                        <div class="txt">
+                            <p class="num">12</p>
+                            <p class="year">2019</p>
+                            <p class="month">February</p>
+                        </div>
+                    </div>
+                <a href="#">Why Lead Generation is Key for Business Growth</a>
+            </div>
+        </div>
+    </section>
+    <section id="subscribe">
+            <div class="subscribe-box">
+                <h1>Subcribe to our Newsletter</h1>
+                <form action="#">
+                    <input type="text" placeholder="Enter email address">
+                    <input type="submit" value="Subscribe">
+                </form>
+            </div>
+        </section>
+        <footer>
+            <div class="f-contents">
+                <ul>
+                    <li>Traveland</li>
+                    <li>Infromation</li>
+                    <li>Experience</li>
+                    <li>Have a Questions?</li>
+                </ul>
+                <div class="f-left">
+                    <div class="coment">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia,
+                        there live the blind texts.</div>
+                    <div class="sns">
+                        <div>
+                            <i class="fab fa-twitter"></i>
+                        </div>
+                        <div>
+                            <i class="fab fa-facebook-f"></i>
+                        </div>
+                        <div>
+                            <i class="fab fa-instagram"></i>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="f-center">
+                    <ul>
+                        <li>Online Enquiry</li>
+                        <li>General Enquiries</li>
+                        <li>Booking Conditions</li>
+                        <li>Privacy and Policy</li>
+                        <li>Refund Policy</li>
+                        <li>Call Us</li>
+                    </ul>
+                </div>
+                <div class="f-center">
+                    <ul>
+                        <li>Adventure</li>
+                        <li>Hotel and Restaurant</li>
+                        <li>py-2 d-block</li>
+                        <li>Nature</li>
+                        <li>Camping</li>
+                        <li>Party</li>
+                    </ul>
+                </div>
+                <div class="f-right">
+                    <ul>
+                        <li>
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div>203 Fake St. Mountain View, San Francisco, California, USA</div>
+                        </li>
+                        <li>
+                            <i class="fas fa-phone-alt"></i>
+                            <div> +2 392 3929 210</div>
+                        </li>
+                        <li>
+                            <i class="fas fa-envelope"></i>
+                            <div>info@yourdomain.com</div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="copy">
+                Copyright ©2019 All rights reserved | This template is made with<i class="fas fa-heart"></i>by Colorlib
+            </div>
+        </footer>
 </body>
 
 </html>
